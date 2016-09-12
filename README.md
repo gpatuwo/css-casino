@@ -26,17 +26,21 @@ This project will be implemented with the following technologies:
 
 - HTML5
 - CSS
+- Adobe Illustrator for vector manipulations
 
 ## Implementation Timeline
 **Monday - Day 1**: Set Up
 - Setup basic HTML index document.
-- Research CSS effects.* Maybe go through the [canvas tutorial][canvas].
+- Learn [HTML/CSS animation][kirupa].
+- Research CSS effects.*
 - Identify three effect groups (also individual effects within the groups too, if any)
 - Learn Sass
-- Make mockup for overall structure
+- Find appropriate vectors/images for use
+- (Make mockup for overall structure)
 - Stylize page and get it set up for implementation of the effect groups
 
 **Tuesday - Day 2**: Effect Group 1
+- Storyboard interactions
 - make effect group 1 happen
 
 **Wednesday - Day 3**: Effect Group 2
@@ -48,14 +52,14 @@ This project will be implemented with the following technologies:
 - finish any final touches (eg acquire domain name or host on github)
 
 #### * Possible effects
-  - Rotation Chip
-- x, y + z
-- rotation around axis
   - 3-D Dice
 - toggles sides
 - exploding sides?
   - Flips Cards
+  - Rotation Chip
+- x, y + z
+- rotation around axis
   - Pseudo element hover effects on links
 
-
+[kirupa]: https://www.kirupa.com/html5/learn_animation.htm
 [canvas]: http://joshondesign.com/p/books/canvasdeepdive/toc.html
