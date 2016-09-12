@@ -1,11 +1,9 @@
 CSS Casino
 ===================
 
-----------
 ## Background
 CSS Casino is a site that demos casino-themed animations using only HTML and CSS.
 
-----------
 ## MVP
 
 With CSS Casino, users will be able to:
@@ -14,7 +12,6 @@ With CSS Casino, users will be able to:
 - [ ] Hover over the graphics to activate the animations
 - [ ] Toggle to show/hide the source code for that animation
 
-----------
 ## Wireframes
 As a whole, this single-page app will contain at least 3 effect categories (each of which will animate upon hover). Inside the effect sections, there will also be a 'view source' button that will reveal the source code for those effects.
 
@@ -23,15 +20,13 @@ At the top of the page, it will have an animation of CSS Casino in neon letterin
 ![wireframe]
 [wireframe]: ./docs/css_casino_wireframe.png
 
-----------
 ## Architecture and Technologies
 
 This project will be implemented with the following technologies:
 
 - HTML5 (with Canvas)
-- CSS 
+- CSS
 
-----------
 ## Implementation Timeline
 **Monday - Day 1**: Set Up
 - Setup basic HTML index document.
