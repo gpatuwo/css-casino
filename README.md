@@ -24,15 +24,15 @@ At the top of the page, it will have an animation of CSS Casino in neon letterin
 
 This project will be implemented with the following technologies:
 
-- HTML5 (with Canvas)
+- HTML5
 - CSS
 
 ## Implementation Timeline
 **Monday - Day 1**: Set Up
 - Setup basic HTML index document.
-- Learn Canvas (via the [canvas tutorial][canvas]).
-[canvas]: http://joshondesign.com/p/books/canvasdeepdive/toc.html
+- Research CSS effects.* Maybe go through the [canvas tutorial][canvas].
 - Identify three effect groups (also individual effects within the groups too, if any)
+- Learn Sass
 - Make mockup for overall structure
 - Stylize page and get it set up for implementation of the effect groups
 
@@ -46,3 +46,16 @@ This project will be implemented with the following technologies:
 
 - make effect group 3 (or more) happen
 - finish any final touches (eg acquire domain name or host on github)
+
+#### * Possible effects
+  - Rotation Chip
+- x, y + z
+- rotation around axis
+  - 3-D Dice
+- toggles sides
+- exploding sides?
+  - Flips Cards
+  - Pseudo element hover effects on links
+
+
+[canvas]: http://joshondesign.com/p/books/canvasdeepdive/toc.html
