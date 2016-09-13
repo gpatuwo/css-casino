@@ -12,7 +12,7 @@ With CSS Casino, users will be able to:
 - [ ] Hover over the graphics to activate the animations
 - [ ] Toggle to show/hide the source code for that animation
 
-## Wireframes
+## Wireframe
 As a whole, this single-page app will contain at least 3 effect categories (each of which will animate upon hover). Inside the effect sections, there will also be a 'view source' button that will reveal the source code for those effects.
 
 At the top of the page, it will have an animation of CSS Casino in neon lettering that flashes subtly. This header will also contain a brief one-liner explaining the purpose of this site as well as links to the Github source code and my LinkedIn page.
@@ -34,7 +34,7 @@ This project will be implemented with the following technologies:
 - Learn [HTML/CSS animation][kirupa].
 - Research CSS effects.*
 - Identify three effect groups (also individual effects within the groups too, if any)
-- Learn Sass
+- Learn Sass + [Prefix free][prefix] syntax / [library][library].
 - Find appropriate vectors/images for use
 - (Make mockup for overall structure)
 - Stylize page and get it set up for implementation of the effect groups
@@ -62,4 +62,6 @@ This project will be implemented with the following technologies:
   - Pseudo element hover effects on links
 
 [kirupa]: https://www.kirupa.com/html5/learn_animation.htm
+[prefix]: https://www.kirupa.com/html5/avoid_using_vendor_prefixes.htm
+[library]: http://leaverou.github.io/prefixfree/
 [canvas]: http://joshondesign.com/p/books/canvasdeepdive/toc.html
