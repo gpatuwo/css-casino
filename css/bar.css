@@ -1,0 +1,59 @@
+.bar {
+  background: #2D7551;
+  color: white;
+}
+
+.bar-section {
+  padding-bottom: 10%;
+}
+
+/* Cocktail Shaker */
+#shaker {
+  max-width: 8%;
+  display: inline-block;
+  margin-left: 30%;
+  margin-right: 5%;
+  cursor: pointer;
+}
+
+#shaker:hover {
+  transform: translateZ(0);
+  animation: shake .18s infinite;
+}
+
+@keyframes shake {
+  50% {
+   transform: translateX(5px) rotate(4deg);
+  }
+
+  100% {
+    transform: translateX(-5px) rotate(-4deg);
+  }
+}
+
+/* Martini */
+#martini {
+  max-width: 8%;
+  display: inline-block;
+  margin-left: 5%;
+  cursor: pointer;
+}
+
+#martini:hover {
+  animation: push 1.7s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes push {
+  0% {
+    transform: translateY(0px);
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: translateY(10px) translateX(5px) scale(1.25);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translateY(20px) translateX(10px) scale(1.5);
+  }
+}

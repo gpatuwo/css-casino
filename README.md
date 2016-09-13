@@ -26,6 +26,7 @@ This project will be implemented with the following technologies:
 
 - HTML5
 - CSS
+- JS (only to be vendor prefix free to dry up code)
 - Adobe Illustrator for vector manipulations
 
 ## Implementation Timeline
@@ -34,7 +35,7 @@ This project will be implemented with the following technologies:
 - Learn [HTML/CSS animation][kirupa].
 - Research CSS effects.*
 - Identify three effect groups (also individual effects within the groups too, if any)
-- Learn Sass + [Prefix free][prefix] syntax / [library][library].
+- Learn [Prefix free][prefix] syntax / [library][library].
 - Find appropriate vectors/images for use
 - (Make mockup for overall structure)
 - Stylize page and get it set up for implementation of the effect groups
