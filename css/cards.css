@@ -1,0 +1,55 @@
+.card-flip {
+  background: gray;
+}
+
+.cards {
+  padding: 7% 5%;
+}
+
+.card-container, .front-card, .back-card {
+  width: 120px;
+  height: 180px;
+  display: inline-block;
+}
+
+.card-container:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card {
+  position: relative;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+}
+
+.front-card, .back-card {
+  position: absolute;
+}
+
+.back-card {
+  background-image: url('../images/playing-card-back.png');
+  background-size: 100% 100%;
+  transform: rotateY(0deg);
+}
+
+.front-card {
+  transform: rotateY(180deg);
+  background-size: 100% 100%;
+}
+
+#ace {
+  background-image: url('../images/Ace.png');
+  transition-delay:
+}
+#king{
+  background-image: url('../images/King.png');
+}
+#queen {
+  background-image: url('../images/Queen.png');
+}
+#jack {
+  background-image: url('../images/Jack.png');
+}
+#ten {
+  background-image: url('../images/Ten.png');
+}

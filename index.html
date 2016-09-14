@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/bar.css">
+    <link rel="stylesheet" href="css/cards.css">
 
     <!-- JS script to DRY up code and not have to deal with vendor prefixes -->
     <script type="text/javascript">
@@ -25,18 +26,60 @@
       </section>
     </div>
 
+    <div class="card-flip">
+      <section class="card-flip">
+        <div class="cards">
+          <div class="card-container" >
+            <div class="card">
+              <div class="front-card" id="ace"></div>
+              <div class="back-card"></div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="front-card" id="king"></div>
+              <div class="back-card"></div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="front-card" id="queen"></div>
+              <div class="back-card"></div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="front-card" id="jack"></div>
+              <div class="back-card"></div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="front-card" id="ten"></div>
+              <div class="back-card"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
     <div class="bar">
       <section class="bar-content">
         <h2 class="section-heading">BAR</h2>
         <div class="bar-section">
           <img src="./vectors/cocktail_shaker.svg" alt="shaker" id="shaker" />
+          <!-- <object data="./vectors/martini-empty.svg" type="image/svg+xml" id="empty"></object> -->
+          <img src="./vectors/lemon.svg" alt="lemon" id="lemon"/>
           <img src="./vectors/martini.svg" alt="martini" id="martini" />
+
         </div>
       </section>
 
     </div>
-
-    <div class="cards">
-    </div>
   </body>
+
 </html>
