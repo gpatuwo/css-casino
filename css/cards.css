@@ -1,18 +1,27 @@
-.card-flip {
+.cards-flip {
   background: gray;
 }
 
+.card-flip {
+  padding: 4% 5%;
+}
+
 .cards {
-  padding: 7% 5%;
+    width: 624px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card-container, .front-card, .back-card {
-  width: 120px;
-  height: 180px;
+  width: 160px;
+  height: 240px;
   display: inline-block;
 }
 
-.card-container:hover .card {
+#left-card{
+
+}
+.cards:hover .card {
   transform: rotateY(180deg);
 }
 
