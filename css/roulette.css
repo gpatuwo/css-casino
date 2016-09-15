@@ -15,7 +15,23 @@
 
 #wheel {
   width: 100%;
-  animation: wheel 2s infinite;
+  cursor: pointer;
+}
+
+#wheel:hover {
+  animation: wheel 2s linear 0s 1;
+}
+
+#wheel::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: yellow;
+    border-radius: 100%;
+    animation: wheel 2s linear 0s infinite;
+    left: 500px;
+    top: 100px;
 }
 
 @keyframes wheel {

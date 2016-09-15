@@ -10,6 +10,7 @@
     width: 817px;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
 }
 
 .card-container, .front-card, .back-card {
@@ -18,9 +19,6 @@
   display: inline-block;
 }
 
-#left-card{
-
-}
 .cards:hover .card {
   transform: rotateY(180deg);
 }
