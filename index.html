@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <title>CSS Casino</title>
 
-    <link rel="stylesheet" href="css/master.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/bar.css">
-    <link rel="stylesheet" href="css/cards.css">
-    <link rel="stylesheet" href="css/roulette.css">
+    <link rel="stylesheet" href="assets/css/master.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/bar.css">
+    <link rel="stylesheet" href="assets/css/cards.css">
+    <link rel="stylesheet" href="assets/css/roulette.css">
     <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline" rel="stylesheet">
     <!-- JS script to DRY up code and not have to deal with vendor prefixes -->
     <script type="text/javascript">
-      "./prefixfree.min.js"
+      "./lib/prefixfree.min.js"
     </script>
     <!-- Another script here to make the snippet code look nicer :) -->
     <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
@@ -21,7 +21,7 @@
   <body>
     <div class="header">
       <section class="header-content">
-        <img src="./images/css-casino_header-art_on.png" alt="css casino" id="header-logo"/>
+        <img src="./assets/images/css-casino_header-art_on.png" alt="css casino" id="header-logo"/>
         <div id="tagline">
           <p>
             casino-themed animations using purely HTML and CSS
@@ -131,11 +131,11 @@
     <div class="cards-fan">
       <section class="cards-fan-section">
         <div class="cards-fan-container">
-          <img src="./images/Ace.png" class="card-fan" id="ace-fan"/>
-          <img src="./images/King.png" class="card-fan" id="king-fan"/>
-          <img src="./images/Queen.png" class="card-fan" id="queen-fan"/>
-          <img src="./images/Jack.png" class="card-fan" id="jack-fan"/>
-          <img src="./images/Ten.png"
+          <img src="./assets/images/Ace.png" class="card-fan" id="ace-fan"/>
+          <img src="./assets/images/King.png" class="card-fan" id="king-fan"/>
+          <img src="./assets/images/Queen.png" class="card-fan" id="queen-fan"/>
+          <img src="./assets/images/Jack.png" class="card-fan" id="jack-fan"/>
+          <img src="./assets/images/Ten.png"
           class="card-fan" id="ten-fan"/>
         </div>
 
@@ -181,7 +181,7 @@
     <div class="roulette">
       <section class="roulette-content">
         <div class="window">
-          <img src="./vectors/roulette-wheel.svg" alt="roulette wheel"
+          <img src="./assets/vectors/roulette-wheel.svg" alt="roulette wheel"
           id="wheel"/>
         </div>
 
@@ -190,7 +190,7 @@
             <code>
               &lt;!-- HTML --&gt;
               &lt;div class="window"&gt;
-                &lt;img src="./vectors/roulette-wheel.svg" alt="roulette wheel"
+                &lt;img src="./assets/vectors/roulette-wheel.svg" alt="roulette wheel"
                 id="wheel"/&gt;
               &lt;/div&gt;
 
@@ -221,9 +221,9 @@
     <div class="bar">
       <section class="bar-content">
         <div class="bar-section">
-          <img src="./vectors/cocktail_shaker.svg" alt="shaker" id="shaker" />
-          <img src="./vectors/lemon.svg" alt="lemon" id="lemon"/>
-          <img src="./vectors/martini.svg" alt="martini" id="martini" />
+          <img src="./assets/vectors/cocktail_shaker.svg" alt="shaker" id="shaker" />
+          <img src="./assets/vectors/lemon.svg" alt="lemon" id="lemon"/>
+          <img src="./assets/vectors/martini.svg" alt="martini" id="martini" />
 
         </div>
 
@@ -231,7 +231,7 @@
           <pre class="prettyprint">
             <code>
               &lt;!-- HTML --&gt;
-              &lt;img src="./vectors/martini.svg" alt="martini" id="martini" /&gt;
+              &lt;img src="./assets/vectors/martini.svg" alt="martini" id="martini" /&gt;
               &lt;!-- CSS --&gt;
               #martini {
                 max-width: 8%;

@@ -1,68 +1,122 @@
-CSS Casino
-===================
+![casino-logo]
+[casino-logo]: ./assets/images/css-casino_header-art_on.png
+[live][casino]
+[casino]: https://gpatuwo.github.io/css-casino/
 
-## Background
-CSS Casino is a site that demos casino-themed animations using only HTML and CSS.
+##### CSS Casino demos animations using purely HTML and CSS.
 
-## MVP
+# Instructions
+Hover over each graphic to activate the animation. For the roulette wheel, try to catch the card by holding down a click!
 
-With CSS Casino, users will be able to:
+# Features & Implementation
 
-- [ ] Scroll through a single-page app to see cool effects that can be implemented using only HTML/CSS
-- [ ] Hover over the graphics to activate the animations
-- [ ] Show the source code for that animation
+## Card Flips
+This section reveals a royal flush upon hover:
+![cards-flip]
+[cards-flip]: ./docs/cards-flip-screen.png
+To animate the flipping of the cards, I created two divs: one for the front card (the face card) and one for the back. These two cards were then positioned absolutely on top of each other. A background image was set for each side, to be revealed through a CSS transition transformation effect :
+``` css
+.cards:hover .card {
+  transform: rotateY(180deg);
+}
 
-## Wireframe
-As a whole, this single-page app will contain at least 3 effect categories (each of which will animate upon hover). Inside the effect sections, there will also be a 'view source' button that will reveal the source code for those effects.
+.card {
+  position: relative;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+}
 
-At the top of the page, it will have an animation of CSS Casino in neon lettering that flashes subtly. This header will also contain a brief one-liner explaining the purpose of this site as well as links to the Github source code and my LinkedIn page.
+.front-card, .back-card {
+  position: absolute;
+}
 
-![wireframe]
-[wireframe]: ./docs/css_casino_wireframe.png
+.back-card {
+  background-image: url('../images/playing-card-back.png');
+  background-size: 100% 100%;
+  transform: rotateY(0deg);
+}
 
-## Architecture and Technologies
+.front-card {
+  transform: rotateY(180deg);
+  background-size: 100% 100%;
+}
 
-This project will be implemented with the following technologies:
+#ace {
+  background-image: url('../images/Ace.png');
+}
+#king{
+  background-image: url('../images/King.png');
+}
+#queen {
+  background-image: url('../images/Queen.png');
+}
+#jack {
+  background-image: url('../images/Jack.png');
+}
+#ten {
+  background-image: url('../images/Ten.png');
+}
+```
+## Card Fan
+This section reveals a royal flush upon hover:
+![cards-fan]
+[cards-fan]: ./docs/card-fan-screen.png
 
-- HTML5
-- CSS
-- JS (only to be vendor prefix free to dry up code)
-- Adobe Illustrator for vector manipulations
+The code for animating this action:
+``` css
+.card-fan {
+  position: absolute;
+  width: 200px;
+  transform-origin: bottom;
+  transition: all .3s linear;
+}
 
-## Implementation Timeline
-**Monday - Day 1**: Set Up
-- Setup basic HTML index document.
-- Learn [HTML/CSS animation][kirupa].
-- Research CSS effects.*
-- Identify three effect groups (also individual effects within the groups too, if any)
-- Learn [Prefix free][prefix] syntax / [library][library].
-- Find appropriate vectors/images for use
-- (Make mockup for overall structure)
-- Stylize page and get it set up for implementation of the effect groups
+.cards-fan-container:hover #ten-fan{
+  transform: rotate(20deg)
+}
+.cards-fan-container:hover #ace-fan{
+  transform: rotate(-20deg)
+}
+.cards-fan-container:hover #jack-fan{
+  transform: rotate(10deg)
+}
+.cards-fan-container:hover #king-fan{
+  transform: rotate(-10deg)
+}
+```
 
-**Tuesday - Day 2**: Effect Group 1
-- Storyboard interactions
-- make effect group 1 happen
+## Roulette Wheel
 
-**Wednesday - Day 3**: Effect Group 2
-- make effect group 2 happen
+![roulette]
+[roulette]: ./docs/roulette-screen.png
 
-**Thursday - Day 4**: Effect Group 3
+The code for making this happen:
+``` css
+.window {
+  display: block;
+  width: 1000px;
+  height: 450px;
+  overflow: hidden;
+}
 
-- make effect group 3 (or more) happen
-- finish any final touches (eg acquire domain name or host on github)
+#wheel {
+  width: 100%;
+  cursor: pointer;
+}
+#wheel:hover {
+  animation: wheel 1s linear 0s infinite;
+}
 
-#### * Possible effects
-  - 3-D Dice
-- toggles sides
-- exploding sides?
-  - Flips Cards
-  - Rotation Chip
-- x, y + z
-- rotation around axis
-  - Pseudo element hover effects on links
+#wheel:active {
+  animation-play-state: paused;
+}
 
-[kirupa]: https://www.kirupa.com/html5/learn_animation.htm
-[prefix]: https://www.kirupa.com/html5/avoid_using_vendor_prefixes.htm
-[library]: http://leaverou.github.io/prefixfree/
-[canvas]: http://joshondesign.com/p/books/canvasdeepdive/toc.html
+@keyframes wheel {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+```
+# Future Features
+- [ ] Dice shake, roll + drop
+- [ ] Animated logo that flashes the lights on and off
