@@ -17,21 +17,12 @@
   width: 100%;
   cursor: pointer;
 }
-
 #wheel:hover {
-  animation: wheel 2s linear 0s 1;
+  animation: wheel 1s linear 0s infinite;
 }
 
-#wheel::before {
-    content: '';
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background: yellow;
-    border-radius: 100%;
-    animation: wheel 2s linear 0s infinite;
-    left: 500px;
-    top: 100px;
+#wheel:active {
+  animation-play-state: paused;
 }
 
 @keyframes wheel {

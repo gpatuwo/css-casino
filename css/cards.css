@@ -2,15 +2,15 @@
   background: gray;
 }
 
-.card-flip {
+.cards-section {
   padding: 7% 5%;
 }
 
 .cards {
-    width: 817px;
-    margin-left: auto;
-    margin-right: auto;
-    cursor: pointer;
+  width: 817px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
 }
 
 .card-container, .front-card, .back-card {
@@ -46,7 +46,6 @@
 
 #ace {
   background-image: url('../images/Ace.png');
-  transition-delay:
 }
 #king{
   background-image: url('../images/King.png');
@@ -59,4 +58,43 @@
 }
 #ten {
   background-image: url('../images/Ten.png');
+}
+
+.cards-fan {
+  background: crimson;
+}
+
+.cards-fan-section {
+  padding: 7% 5%;
+  width: 70%;
+  height: 300px;
+}
+
+.cards-fan-container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  cursor: pointer;
+  margin-top: 1.5%
+}
+
+.card-fan {
+  position: absolute;
+  width: 200px;
+  transform-origin: bottom;
+  transition: all .3s linear;
+}
+
+.cards-fan-container:hover #ten-fan{
+  transform: rotate(20deg)
+}
+.cards-fan-container:hover #ace-fan{
+  transform: rotate(-20deg)
+}
+.cards-fan-container:hover #jack-fan{
+  transform: rotate(10deg)
+}
+.cards-fan-container:hover #king-fan{
+  transform: rotate(-10deg)
 }
