@@ -9,17 +9,19 @@
     <link rel="stylesheet" href="css/bar.css">
     <link rel="stylesheet" href="css/cards.css">
     <link rel="stylesheet" href="css/roulette.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline" rel="stylesheet">
     <!-- JS script to DRY up code and not have to deal with vendor prefixes -->
     <script type="text/javascript">
       "./prefixfree.min.js"
     </script>
+    <!-- Another script here to make the snippet code look nice :) -->
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
   </head>
 
   <body>
     <div class="header">
       <section class="header-content">
-        <img src="./images/casino_logo.png" alt="css casino" id="header-logo"/>
+        <img src="./images/css-casino_header-art_on.png" alt="css casino" id="header-logo"/>
         <div id="tagline">
           <p>
             casino-themed animations using purely HTML and CSS
@@ -66,6 +68,61 @@
             </div>
           </div>
         </div>
+        <div class="code-button">
+          <input type="checkbox" name="hide">
+          <label for="hide">hide code</label>
+          <input type="checkbox" name="show">
+          <label for="show">show code</label>
+        </div>
+        <div class="code-snippet">
+          <pre class="prettyprint">
+            <code>
+              &lt;!-- HTML --&gt;
+              &lt;div class="card-container" &gt;
+                &lt;div class="card"&gt;
+                  &lt;div class="front-card" id="ace"&gt;&lt;/div&gt;
+                  &lt;div class="back-card"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+
+              &lt;!-- CSS --&gt;
+              .card-container, .front-card, .back-card {
+                width: 160px;
+                height: 240px;
+                display: inline-block;
+              }
+
+              .cards:hover .card {
+                transform: rotateY(180deg);
+              }
+
+              .card {
+                position: relative;
+                transition: 0.5s;
+                transform-style: preserve-3d;
+              }
+
+              .front-card, .back-card {
+                position: absolute;
+              }
+
+              .back-card {
+                background-image: url('../images/playing-card-back.png');
+                background-size: 100% 100%;
+                transform: rotateY(0deg);
+              }
+
+              .front-card {
+                transform: rotateY(180deg);
+                background-size: 100% 100%;
+              }
+
+              #ace {
+                background-image: url('../images/Ace.png');
+              }
+            </code>
+          </pre>
+        </div>
       </section>
     </div>
 
@@ -79,6 +136,43 @@
           <img src="./images/Ten.png"
           class="card-fan" id="ten-fan"/>
         </div>
+
+        <div class="code-snippet" id="fan-snip">
+          <pre class="prettyprint">
+            <code>
+              &lt;!-- HTML --&gt;
+              &lt;div class="cards-fan-container"&gt;
+                &lt;img src="./images/Ace.png" class="card-fan" id="ace-fan"/&gt;
+                &lt;img src="./images/King.png" class="card-fan" id="king-fan"/&gt;
+                &lt;img src="./images/Queen.png" class="card-fan" id="queen-fan"/&gt;
+                &lt;img src="./images/Jack.png" class="card-fan" id="jack-fan"/&gt;
+                &lt;img src="./images/Ten.png"
+                class="card-fan" id="ten-fan"/&gt;
+              &lt;/div&gt;
+
+              &lt;!-- CSS --&gt;
+              .card-fan {
+                position: absolute;
+                width: 200px;
+                transform-origin: bottom;
+                transition: all .3s linear;
+              }
+
+              .cards-fan-container:hover #ten-fan{
+                transform: rotate(20deg)
+              }
+              .cards-fan-container:hover #ace-fan{
+                transform: rotate(-20deg)
+              }
+              .cards-fan-container:hover #jack-fan{
+                transform: rotate(10deg)
+              }
+              .cards-fan-container:hover #king-fan{
+                transform: rotate(-10deg)
+              }
+            </code>
+          </pre>
+        </div>
       </section>
     </div>
 
@@ -87,6 +181,37 @@
         <div class="window">
           <img src="./vectors/roulette-wheel.svg" alt="roulette wheel"
           id="wheel"/>
+        </div>
+
+        <div class="code-snippet">
+          <pre class="prettyprint">
+            <code>
+              &lt;!-- HTML --&gt;
+              &lt;div class="window"&gt;
+                &lt;img src="./vectors/roulette-wheel.svg" alt="roulette wheel"
+                id="wheel"/&gt;
+              &lt;/div&gt;
+
+              &lt;!-- CSS --&gt;
+              #wheel {
+                width: 100%;
+                cursor: pointer;
+              }
+              #wheel:hover {
+                animation: wheel 1s linear 0s infinite;
+              }
+
+              #wheel:active {
+                animation-play-state: paused;
+              }
+
+              @keyframes wheel {
+                100% {
+                  transform: rotateZ(360deg);
+                }
+              }
+            </code>
+          </pre>
         </div>
       </section>
     </div>
@@ -111,6 +236,22 @@
       </section>
 
     </div>
+
+    <script type="text/javascript">
+      $(".toggle-code").on("click", function () {
+        var $button = $(this);
+        var display = $button.next(".show-code").css("display");
+        var text = $button.text();
+        $button.next(".show-code").css("display", toggleDisplay(display));
+        $button.text(toggleVal(text));
+      });
+      function toggleVal(val) {
+        return (val == "show code") ? "hide code" : "show code";
+      }
+      function toggleDisplay(val) {
+        return (val == "block") ? "none" : "block";
+      }
+    </script>
   </body>
 
 </html>

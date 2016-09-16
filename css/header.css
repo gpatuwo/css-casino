@@ -1,3 +1,12 @@
+.header {
+  background: black;
+}
+
+.header-content {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
 #header-logo {
   display: block;
   margin-left: auto;
@@ -7,4 +16,7 @@
 
 #tagline {
   text-align: center;
+  font-family: "Bungee Hairline";
+  color: white;
+  padding-top: .5%;
 }

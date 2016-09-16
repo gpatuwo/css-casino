@@ -1,5 +1,5 @@
 .cards-flip {
-  background: gray;
+  background: #2D7551;
 }
 
 .cards-section {
@@ -66,8 +66,6 @@
 
 .cards-fan-section {
   padding: 7% 5%;
-  width: 70%;
-  height: 300px;
 }
 
 .cards-fan-container {
@@ -97,4 +95,8 @@
 }
 .cards-fan-container:hover #king-fan{
   transform: rotate(-10deg)
+}
+
+#fan-snip {
+  margin-top: 40%;
 }
