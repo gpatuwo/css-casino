@@ -68,12 +68,6 @@
             </div>
           </div>
         </div>
-        <div class="code-button">
-          <input type="checkbox" name="hide">
-          <label for="hide">hide code</label>
-          <input type="checkbox" name="show">
-          <label for="show">show code</label>
-        </div>
         <div class="code-snippet">
           <pre class="prettyprint">
             <code>
@@ -216,42 +210,49 @@
       </section>
     </div>
 
-    <div class="dice">
-      <section class="dice-content">
-        <div class="throw-area">
-
-        </div>
-      </section>
-    </div>
-
     <div class="bar">
       <section class="bar-content">
-        <h2 class="section-heading">BAR</h2>
         <div class="bar-section">
           <img src="./vectors/cocktail_shaker.svg" alt="shaker" id="shaker" />
           <img src="./vectors/lemon.svg" alt="lemon" id="lemon"/>
           <img src="./vectors/martini.svg" alt="martini" id="martini" />
 
         </div>
+
+        <div class="code-snippet">
+          <pre class="prettyprint">
+            <code>
+              &lt;!-- HTML --&gt;
+              &lt;img src="./vectors/martini.svg" alt="martini" id="martini" /&gt;
+              &lt;!-- CSS --&gt;
+              #martini {
+                max-width: 8%;
+                display: inline-block;
+                margin-left: 5%;
+                cursor: pointer;
+              }
+
+              #martini:hover {
+                animation: push 1.7s 1;
+                animation-fill-mode: forwards;
+              }
+
+              @keyframes push {
+                0% {
+                  transform: translateY(0px);
+                  animation-timing-function: ease-in;
+                }
+                50% {
+                  transform: translateY(10px) translateX(5px) scale(1.25);
+                  animation-timing-function: ease-out;
+                }
+                100% {
+                  transform: translateY(20px) translateX(10px) scale(1.5);
+                }
+              }
       </section>
 
     </div>
-
-    <script type="text/javascript">
-      $(".toggle-code").on("click", function () {
-        var $button = $(this);
-        var display = $button.next(".show-code").css("display");
-        var text = $button.text();
-        $button.next(".show-code").css("display", toggleDisplay(display));
-        $button.text(toggleVal(text));
-      });
-      function toggleVal(val) {
-        return (val == "show code") ? "hide code" : "show code";
-      }
-      function toggleDisplay(val) {
-        return (val == "block") ? "none" : "block";
-      }
-    </script>
   </body>
 
 </html>

@@ -1,10 +1,14 @@
 .bar {
-  background: crimson;
+  background: #CC3333;
   color: white;
 }
 
+.bar-content {
+    padding: 7% 5%;
+}
+
 .bar-section {
-  padding-bottom: 10%;
+  padding-bottom: 2%;
 }
 
 /* Cocktail Shaker */
