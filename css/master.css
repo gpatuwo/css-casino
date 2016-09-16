@@ -8,6 +8,15 @@ p {
  margin: 0;
 }
 
+#credits {
+  padding: 2%;
+}
+
+.icon {
+  width: 16px;
+  padding: 0 4px;
+}
+
 .section-heading {
   text-align: center;
   padding: 5%;

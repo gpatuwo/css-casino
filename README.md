@@ -10,7 +10,7 @@ With CSS Casino, users will be able to:
 
 - [ ] Scroll through a single-page app to see cool effects that can be implemented using only HTML/CSS
 - [ ] Hover over the graphics to activate the animations
-- [ ] Toggle to show/hide the source code for that animation
+- [ ] Show the source code for that animation
 
 ## Wireframe
 As a whole, this single-page app will contain at least 3 effect categories (each of which will animate upon hover). Inside the effect sections, there will also be a 'view source' button that will reveal the source code for those effects.
