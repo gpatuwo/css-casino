@@ -86,7 +86,7 @@ The code for animating this action:
 ```
 
 ## Roulette Wheel
-
+The roulette wheel starts rotating when you hover over the image.
 ![roulette]
 [roulette]: ./docs/roulette-screen.png
 
