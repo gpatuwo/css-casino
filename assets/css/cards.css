@@ -37,7 +37,7 @@
   background-image: url('../images/playing-card-back.png');
   background-size: 100% 100%;
   transform: rotateY(0deg);
-  backface-visibility: hidden;
+
 }
 
 .front-card {
