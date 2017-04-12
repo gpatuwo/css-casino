@@ -1,5 +1,4 @@
-![casino-logo]
-[casino-logo]: ./assets/images/css-casino_header-art_on.png
+![casino-logo](./assets/images/css-casino_header-art_on.png)
 [live][casino]
 [casino]: https://gpatuwo.github.io/css-casino/
 
@@ -12,8 +11,7 @@ Hover over each graphic to activate the animation. For the roulette wheel, try t
 
 ## Card Flips
 This section reveals a royal flush upon hover:
-![cards-flip]
-[cards-flip]: ./docs/cards-flip-screen.png
+![cards-flip](./docs/cards_flip.gif)
 To animate the flipping of the cards, I created two divs: one for the front card (the face card) and one for the back. These two cards were then positioned absolutely on top of each other. A background image was set for each side, to be revealed through a CSS transition transformation effect :
 ``` css
 .cards:hover .card {
@@ -59,8 +57,7 @@ To animate the flipping of the cards, I created two divs: one for the front card
 ```
 ## Card Fan
 This section reveals a royal flush upon hover:
-![cards-fan]
-[cards-fan]: ./docs/card-fan-screen.png
+![cards-fan](./docs/card-fan-screen.png)
 
 The code for animating this action:
 ``` css
@@ -87,8 +84,7 @@ The code for animating this action:
 
 ## Roulette Wheel
 The roulette wheel starts rotating when you hover over the image.
-![roulette]
-[roulette]: ./docs/roulette-screen.png
+![roulette](/docs/roulette_spin.gif)
 
 The code for making this happen:
 ``` css
