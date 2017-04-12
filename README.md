@@ -1,6 +1,5 @@
 ![casino-logo](./assets/images/css-casino_header-art_on.png)
-[live][casino]
-[casino]: https://gpatuwo.github.io/css-casino/
+[live](https://gpatuwo.github.io/css-casino/)
 
 ##### CSS Casino demos animations using purely HTML and CSS.
 
